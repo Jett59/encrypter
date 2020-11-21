@@ -5,7 +5,7 @@
 typedef unsigned char ubyte;
 #endif
 typedef struct Key {
-    ubyte bytes[32];
+    ubyte* bytes;
     ubyte bytePos;
     ubyte maxBytePos;
 } Key;
