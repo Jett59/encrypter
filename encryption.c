@@ -18,7 +18,6 @@ ubyte* encryptBytes (ubyte* bytes, size_t numberOfBytes, Key key)
         if(key.bytePos < key.maxBytePos)
         {
             *result = encryptByte(bytes[i], key);
-            printf("encrypted byte: %d\n", *result);
             result++;
             key.bytePos++;
         }
@@ -28,7 +27,7 @@ ubyte* encryptBytes (ubyte* bytes, size_t numberOfBytes, Key key)
             i--;
         }       
     }
-    result++;
+    //result++;
     *result = 0;
     result = (ubyte*)resultAnchor;
     return result;
