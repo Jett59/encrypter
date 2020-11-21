@@ -10,7 +10,7 @@ Encrypter.so: clean
 	gcc --shared -o Encrypter.so encryption.c
 
 app.exe: clean
-	gcc -o app.exe *.c
+	gcc -o app.exe encryption.c
 
 clean:
 	rm -f *.o *.exe *.dll *.dylib *.so

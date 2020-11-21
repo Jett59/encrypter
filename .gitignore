@@ -53,3 +53,7 @@ dkms.conf
 
 #log files
 *.log
+#files used in the file encription process
+keyfile
+inputfile
+outputfile
